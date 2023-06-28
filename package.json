@@ -12,7 +12,6 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "rimraf ./out && tsc",
     "start": "yarn && nodemon",
     "production": "NODE_ENV=production node out/index.js",
     "test": "vitest run",
