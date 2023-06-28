@@ -1,7 +1,3 @@
-/* eslint-disable import/first */
-import dotenv from 'dotenv'
-dotenv.config()
-
 import express, { NextFunction, Request, Response } from 'express'
 import helmet from 'helmet'
 import { config } from './cache'
@@ -39,4 +35,4 @@ logger.info(`\tTOKEN: ${config.token}`)
 logger.info(`\tPRERELEASE: ${config.prerelease}`)
 logger.info(`\tURL: ${config.url}`)
 
-app.listen(port, () => logger.info(`Chestnut listening on port ${port}`))
+export default app

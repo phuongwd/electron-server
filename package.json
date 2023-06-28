@@ -2,7 +2,7 @@
   "name": "chestnut",
   "version": "0.9.0",
   "description": "Lightweight releases server for Electron designed to work with `electron-builder` and Electron's built-in `autoUpdater`",
-  "main": "src/server.js",
+  "main": "src/index.ts",
   "authors": [
     "Nick Beaulieu",
     "Tristan Dyer",
@@ -12,9 +12,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "rimraf ./dist && tsc",
+    "build": "rimraf ./out && tsc",
     "start": "yarn && nodemon",
-    "production": "NODE_ENV=production node dist/index.js",
+    "production": "NODE_ENV=production node out/index.js",
     "test": "vitest run",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",

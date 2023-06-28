@@ -8,14 +8,20 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "rootDir": "src",
-    "outDir": "dist",
+    "outDir": "out",
     "baseUrl": ".",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "*": ["node_modules/*"]
+      "*": [
+        "node_modules/*"
+      ]
     }
   },
-  "exclude": ["node_modules"],
-  "include": ["src/**/*"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*"
+  ]
 }
